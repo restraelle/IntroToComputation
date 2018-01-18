@@ -1,4 +1,4 @@
-#define <stdio.h>
+#include <stdio.h>
 
 int main() {
     int counter;
@@ -7,5 +7,7 @@ int main() {
     number = 5;
 
     counter = number;
+
+    printf("waoow %i and %i", counter, 18);r
 
 }
