@@ -8,6 +8,6 @@ int main() {
 
     counter = number;
 
-    printf("waoow %i and %i", counter, 18);r
+    printf("waoow %i and %i", counter, 18);
 
 }
