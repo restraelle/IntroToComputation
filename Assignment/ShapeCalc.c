@@ -105,3 +105,6 @@ int main() {
     }
     return 0;
 }
+int test(char* text) {
+
+}
