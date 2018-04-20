@@ -26,19 +26,22 @@ int main() {
     time_t theTime;
     time(&theTime);
     srand((unsigned)theTime);
+    for(i = 0; i < 1000; i++) {
+        printf("[%s] ", "UNSORTED");
+        for(i = 0; i < 30; i++) {
+            numbers[i] = rand() % 10;
+            printf("%d ", numbers[i]);
+        }
+        printf(" ");
 
-    printf("[%-10s]", "UNSORTED");
-    for(i = 0; i < 30; i++) {
-        numbers[i] = rand() % 10;
-        printf("%d ", numbers[i]);
+        bubbleSort(numbers, 30);
+
+        printf("[%s] ", "SORTED");
+        for(i = 0; i < 30; i++) {
+            printf("%d ", numbers[i]);
+        }
+        printf("\n");
     }
-    printf("\n");
 
-    bubbleSort(numbers, 30);
-
-    printf("[%-10s]", "SORTED");
-    for(i = 0; i < 30; i++) {
-        printf("%d ", numbers[i]);
-    }
     return 0;
 }
